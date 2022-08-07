@@ -10,7 +10,7 @@ db
 .then(() => {
     
     console.log('Successfully connected to database!!')
-    const server = app.listen(8080,()=>console.log("listening"));
+    const server = app.listen(process.env.PORT || 8080,()=>console.log("listening"));
 })
 
 // Statically serve the public folder here
